@@ -1,0 +1,74 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0 auto;
+    align-items: flex-start;
+    background-color:rgba(72, 148, 72, 0.589);
+    color: whitesmoke;
+}
+
+.navbar__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    gap: 2px;
+}
+
+.navbar__links{
+    display: flex;
+    justify-content: flex-end;
+    gap:  10px;
+    font-size: 17px;
+    padding-top: 20px;
+    }
+
+.navbar__links a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.navbar__links a:hover {
+    text-decoration: underline;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: rgba(178, 236, 178, 0.589);
+}
+
+.card {
+    background-color: rgb(213, 229, 215);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 200px;
+    text-align: center;
+    padding: 30px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgb(70, 108, 70);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    color:  rgb(70, 108, 70);
+    font-size: 20px;
+}

@@ -1,0 +1,69 @@
+.window {
+    display: flexbox;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(145, 219, 145);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(13, 76, 16);
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    color: rgb(48, 173, 96);
+    background-color: rgb(206, 233, 211);
+    border-color: white;
+}
+
+.herramientas {
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.herramienta1 {
+    position: absolute;
+    bottom: 100%;
+    left: 25%;
+    transform: translateX(-50%);
+    background-color: rgb(18, 116, 52);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.herramientas:hover .herramienta1 {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .window {
+        height: 50vh;
+        width: 50vw;
+    }
+}
+
+@keyframes popFade {
+  from {
+    transform: scale(0.5);
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    transform: rotateY(-90deg);
+    opacity: 1;
+  }
+}
+
+.window {
+    animation: popFade 3s ease-out 600ms;
+}

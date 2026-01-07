@@ -1,0 +1,88 @@
+.VLLC {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(180deg,#9c59db, #CDB7F6 );
+    color: white;
+    text-align: center;
+    height: 150vh;
+    animation: FadeUP 1s ease-out;;
+}
+
+.VLLC__content {
+    max-width: 600px;
+    padding: 0 5vw;
+}
+
+.VLLC h2 {
+    font-size:4vw;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    
+}
+
+.VLLC p {
+    font-size: 15px;
+    margin-bottom: 35px;
+    margin-top: 30px;
+    overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5e14a4;
+}
+
+.VLLC button {
+    background-color: whitesmoke;
+    color: #5e14a4;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform o.3s ease, background-color 0.3s ease;
+}
+
+.VLLC button:hover {
+    background-color: #b384df;
+    transform: scale(1.1);
+}
+
+@keyframes FadeUP {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .VLLC h2 {
+        font-size: 2vw;
+    }
+
+    .VLLC p {
+        font-size: 8px;
+    }
+
+    .VLLC button {
+        padding: 12px 27px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .VLLC h2 {
+        font-size: 1vw;
+    }
+
+    .VLLC p {
+        font-size: 6px;
+    }
+
+    .VLLC button {
+        padding: 10px 25px;
+        font-size: 0.7rem;
+    }
+}
